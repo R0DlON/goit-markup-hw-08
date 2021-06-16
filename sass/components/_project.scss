@@ -26,7 +26,7 @@
   text-decoration: none;
 }
 
-.project-thumb {
+.project-list__thumb {
   position: relative;
 
   overflow: hidden;
@@ -48,7 +48,7 @@
   }
 }
 
-.project-thumb:before {
+.project-list__thumb:before {
   .project-list__link:hover &,
   .project-list__link:focus & {
     transform: translateY(0%);
@@ -57,7 +57,7 @@
   }
 }
 
-.overlay {
+.project-list__overlay {
   position: absolute;
 
   width: 100%;
@@ -66,7 +66,7 @@
   opacity: 0;
 }
 
-.overlay--text {
+.project-list__overlay--text {
   top: 50%;
   left: 50%;
 
@@ -88,14 +88,14 @@
   }
 }
 
-.project-box {
+.project-list__box {
   padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 24px;
   padding-right: 24px;
 }
 
-.project-box__title {
+.project-list__title {
   margin-bottom: 4px;
 
   font-weight: bold;
@@ -104,7 +104,7 @@
   letter-spacing: 0.06em;
   color: $primary-text-color;
 }
-.project-box__text {
+.project-list__text {
   font-size: 16px;
   line-height: 1.8;
   color: #757575;
