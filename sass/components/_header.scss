@@ -1,0 +1,135 @@
+/* Шапка */
+.header {
+  display: flex;
+  height: 80px;
+
+  border-bottom: 1px solid #ececec;
+}
+
+.logo {
+  margin-right: 90px;
+
+  text-decoration: none;
+  font-family: Raleway;
+  font-weight: bold;
+  font-size: 26px;
+  color: $primary-text-color;
+
+  transition: color $patternTime $patternCubicBuzier;
+  &:hover,
+  &:focus {
+    color: $primery-accent-color;
+  }
+}
+
+.logo--blueColor {
+  margin: 0px;
+  color: $primery-accent-color;
+}
+
+.nav-list {
+  display: flex;
+}
+
+.nav-list__item {
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+
+.nav-list__link {
+  &.nav-list__link--current {
+    position: relative;
+    font-weight: 500;
+    color: $primery-accent-color;
+  }
+}
+
+.nav-list__link--current {
+  &::after {
+    content: "";
+    position: absolute;
+    top: 115%;
+    right: 0%;
+
+    width: 100%;
+    height: 4px;
+
+    background-color: #2196f3;
+    border-radius: 2px;
+
+    transition: background-color $patternTime $patternCubicBuzier;
+  }
+  text-decoration: none;
+}
+
+.nav-list__link {
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  font-weight: 500;
+  color: $primary-text-color;
+
+  transition: color $patternTime $patternCubicBuzier;
+  &:focus,
+  &:hover {
+    color: $primery-accent-color;
+  }
+}
+
+.auth-list {
+  margin-left: auto;
+
+  display: flex;
+}
+
+.auth-list__item {
+  display: flex;
+  align-items: center;
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+
+.auth-list__link {
+  display: flex;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  font-weight: 500;
+  color: #757575;
+
+  transition: color $patternTime $patternCubicBuzier;
+  &:focus,
+  &:hover {
+    color: $primery-accent-color;
+  }
+}
+
+.auth-list__icon--mailLocation {
+  margin-right: 10px;
+
+  width: 16px;
+  height: 12px;
+
+  transition: fill $patternTime $patternCubicBuzier;
+}
+
+.auth-list__icon--phoneLocation {
+  margin-right: 10px;
+
+  width: 10px;
+  height: 16px;
+  transition: fill $patternTime $patternCubicBuzier;
+}
+
+.auth-list__icon {
+  fill: $primary-icon-color;
+
+  transition: fill $patternTime $patternCubicBuzier;
+  .auth-list__link:hover &,
+  .auth-list__link:focus & {
+    fill: $primery-accent-color;
+  }
+}

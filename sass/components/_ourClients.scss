@@ -1,0 +1,41 @@
+/* Our Clients */
+.сlients-list {
+  display: flex;
+  justify-content: center;
+}
+
+.сlients-list__item {
+  display: flex;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.сlients-list__link {
+  padding: 15px 30px;
+
+  border: 1px solid $primary-icon-color;
+  border-radius: 4px;
+  transition: border-color $patternTime $patternCubicBuzier;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    border-color: $primery-accent-color;
+  }
+}
+
+svg {
+  .сlients-list__link > & {
+    width: 106px;
+    height: 60px;
+
+    fill: $primary-icon-color;
+    transition: fill $patternTime $patternCubicBuzier;
+  }
+  .сlients-list__link:hover &,
+  .сlients-list__link:focus & {
+    fill: $primery-accent-color;
+  }
+}

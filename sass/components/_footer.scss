@@ -1,0 +1,153 @@
+/* Footer */
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  background-color: #2f303a;
+}
+// Address
+.address-container {
+  margin-right: 70px;
+}
+
+.logo--whiteColor {
+  margin-right: 0px;
+
+  color: #ffffff;
+}
+
+.address {
+  margin-top: 20px;
+}
+
+.address__item {
+  margin-bottom: 9px;
+
+  font-style: normal;
+  line-height: 1.7;
+  color: #ffffff;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.address__link {
+  font-style: normal;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.6);
+
+  transition: color $patternTime $patternCubicBuzier;
+
+  &:focus,
+  &:hover {
+    color: $primery-accent-color;
+  }
+}
+
+// Icon-Container
+.social-container {
+  margin-right: 93px;
+}
+
+.social-title {
+  margin-bottom: 20px;
+
+  color: #ffffff;
+}
+
+.social-list__item--spaceBetween:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-list__link--opacityBackground {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+svg {
+  .social-list__link--opacityBackground > & {
+    fill: #ffffff;
+  }
+}
+
+// Mailing-Container
+
+.mailing-container {
+  display: flex;
+}
+
+.mailing-form {
+  display: flex;
+
+  flex-direction: column;
+}
+
+.mailing-form__title {
+  margin-bottom: 20px;
+
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.mailing-form__list {
+  display: flex;
+  align-items: center;
+}
+
+.mailing-form__input {
+  margin-right: 12px;
+
+  width: 360px;
+  padding: 15px;
+
+  font-size: 16px;
+  line-height: 1.25;
+  color: #ffffff;
+
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  background: #2f303a;
+  transition: border-color $patternTime $patternCubicBuzier;
+  &:focus {
+    border-color: $primery-accent-color;
+  }
+}
+
+.mailing-form__button {
+  display: flex;
+
+  padding: 10px 30px;
+  align-items: center;
+
+  text-align: center;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.06em;
+  transition: box-shadow $patternTime $patternCubicBuzier;
+
+  color: #ffffff;
+  background: $primery-accent-color;
+  box-shadow: $box-shadow-button;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.mailing-form__title--buttonTitle {
+  margin-bottom: 0px;
+
+  line-height: 1.9;
+  letter-spacing: 0.06em;
+}
+
+svg {
+  .mailing-form__item & {
+    margin-left: 10px;
+
+    width: 24px;
+    height: 24px;
+
+    fill: #ffffff;
+  }
+}

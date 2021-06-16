@@ -1,0 +1,69 @@
+/* Особенности*/
+.features-list {
+  display: flex;
+}
+
+.features-list__item {
+  margin-right: 30px;
+
+  width: 270px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.features-list__container {
+  display: flex;
+
+  margin-bottom: 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
+
+  background-color: #f5f4fa;
+}
+
+.features-list__icon--features1,
+.features-list__icon--features2 {
+  width: 65px;
+  height: 70px;
+
+  fill: #212121;
+  transition: fill $patternTime $patternCubicBuzier;
+  cursor: pointer;
+
+  &:hover {
+    fill: $primery-accent-color;
+  }
+}
+
+.features-list__icon--features3,
+.features-list__icon--features4 {
+  width: 70px;
+  height: 70px;
+
+  fill: #212121;
+  transition: fill $patternTime $patternCubicBuzier;
+  cursor: pointer;
+
+  &:hover {
+    fill: $primery-accent-color;
+  }
+}
+
+.features-list__title {
+  margin-bottom: 10px;
+
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.features-list__text {
+  line-height: 1.7;
+
+  color: #757575;
+}

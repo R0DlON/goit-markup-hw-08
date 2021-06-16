@@ -1,0 +1,111 @@
+/* Проекты */
+
+.project-list {
+  margin: -15px;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.project-list__item {
+  width: 370px;
+  margin: 15px;
+
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
+  transition: box-shadow $patternTime $patternCubicBuzier;
+
+  &:hover,
+  &:focus {
+    box-shadow: $box-shadow;
+  }
+}
+
+.project-list__link {
+  text-decoration: none;
+}
+
+.project-thumb {
+  position: relative;
+
+  overflow: hidden;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0%;
+    left: 0%;
+
+    width: 100%;
+    height: 100%;
+    transform: translateY(100%);
+
+    background-color: rgba(33, 150, 243, 0.9);
+
+    opacity: 0;
+    transition: opacity $patternTime $patternCubicBuzier,
+      transform $patternTime $patternCubicBuzier;
+  }
+}
+
+.project-thumb:before {
+  .project-list__link:hover &,
+  .project-list__link:focus & {
+    transform: translateY(0%);
+
+    opacity: 1;
+  }
+}
+
+.overlay {
+  position: absolute;
+
+  width: 100%;
+
+  transition: opacity $patternTime $patternCubicBuzier;
+  opacity: 0;
+}
+
+.overlay--text {
+  top: 50%;
+  left: 50%;
+
+  width: 322px;
+
+  font-size: 18px;
+  line-height: 1.6;
+  color: #ffffff;
+
+  transform: translate(-50%, -50%) translateY(100%);
+  transition: opacity $patternTime $patternCubicBuzier,
+    transform $patternTime $patternCubicBuzier;
+
+  .project-list__link:hover &,
+  .project-list__link:focus & {
+    transform: translate(-50%, -50%) translateY(0%);
+
+    opacity: 1;
+  }
+}
+
+.project-box {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.project-box__title {
+  margin-bottom: 4px;
+
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: $primary-text-color;
+}
+.project-box__text {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #757575;
+}

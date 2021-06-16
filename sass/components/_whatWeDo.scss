@@ -1,0 +1,29 @@
+//  /* What we do */
+
+.our-work {
+  display: flex;
+}
+
+.our-work__item {
+  position: relative;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.our-work__text {
+  position: absolute;
+
+  width: 100%;
+  bottom: 0%;
+  display: flex;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  justify-content: center;
+
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #ffffff;
+
+  background: rgba(47, 48, 58, 0.8);
+}

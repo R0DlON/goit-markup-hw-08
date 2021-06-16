@@ -1,0 +1,85 @@
+/* Our Team */
+.section--silverBackground {
+  background-color: #f5f4fa;
+}
+
+.team-list {
+  display: flex;
+}
+.team-list__item {
+  background-color: #ffffff;
+  box-shadow: $box-shadow;
+  border-radius: 0px 0px 4px 4px;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+// team-list
+.team-list__box {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.team-list__title {
+  margin-bottom: 10px;
+
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+}
+
+.team-list__text {
+  margin-bottom: 16px;
+
+  font-size: 16px;
+  color: #757575;
+  text-align: center;
+}
+
+.team-list__box--social {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+// Social-Box
+
+.social-list {
+  display: flex;
+  justify-content: center;
+}
+
+.social-list__item {
+  &:not(:last-child) {
+    margin-right: 5px;
+  }
+}
+
+.social-list__link {
+  display: flex;
+
+  padding: 12px;
+
+  background-color: #ffffff;
+  border-radius: 50%;
+  transition: background-color $patternTime $patternCubicBuzier;
+  cursor: pointer;
+  &:hover,
+  &:focus {
+    border-radius: 50%;
+
+    background-color: $primery-accent-color;
+  }
+}
+
+svg {
+  .social-list__link > & {
+    width: 20px;
+    height: 20px;
+
+    fill: $primary-icon-color;
+    transition: fill $patternTime $patternCubicBuzier;
+  }
+  .social-list__link:hover &,
+  .social-list__link:focus & {
+    fill: #ffffff;
+  }
+}
