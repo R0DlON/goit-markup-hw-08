@@ -8,19 +8,42 @@ body {
 }
 
 .container {
-  margin-left: auto;
-  margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
 
-  width: 1200px;
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+  @media screen and (min-width: 1600px) {
+    margin-left: auto;
+    margin-right: auto;
+
+    width: 1200px;
+  }
 }
 
 .container--flex-header {
-  display: flex;
+  @media screen and (min-width: 480px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 768px;
+  }
+  @media screen and (min-width: 1600px) {
+    width: 1600px;
+    display: flex;
 
-  align-items: center;
-  justify-content: center;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 .container--flex-footer {
@@ -31,6 +54,16 @@ body {
 .section {
   padding-top: $patternSectionPadding;
   padding-bottom: $patternSectionPadding;
+
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+  @media screen and (min-width: 1600px) {
+    width: 1600px;
+  }
 }
 
 .section__title {

@@ -1,24 +1,46 @@
 /* Шапка */
 .header {
-  display: flex;
-  height: 80px;
-
   border-bottom: 1px solid #ececec;
+  @media screen and (min-width: 480px) {
+    display: flex;
+    align-items: center;
+
+    width: 480px;
+    height: 60px;
+  }
+  @media screen and (min-width: 768px) {
+    height: 80px;
+    width: 768px;
+  }
+  @media screen and (min-width: 1600px) {
+    width: 1600px;
+  }
 }
 
 .logo {
-  margin-right: 90px;
-
   text-decoration: none;
   font-family: Raleway;
   font-weight: bold;
-  font-size: 26px;
+
   color: $primary-text-color;
 
   transition: color $patternTime $patternCubicBuzier;
   &:hover,
   &:focus {
     color: $primery-accent-color;
+  }
+
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 24px;
+  }
+  @media screen and (min-width: 768px) {
+    font-size: 24px;
+  }
+  @media screen and (min-width: 1600px) {
+    margin-right: 90px;
+    font-size: 26px;
   }
 }
 
@@ -29,6 +51,13 @@
 
 .nav-list {
   display: flex;
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    display: none;
+  }
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1600px) {
+  }
 }
 
 .nav-list__item {
@@ -78,9 +107,19 @@
 }
 
 .auth-list {
-  margin-left: auto;
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    display: none;
+  }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+  }
+  @media screen and (min-width: 1600px) {
+    margin-left: auto;
 
-  display: flex;
+    display: flex;
+    width: 1600px;
+  }
 }
 
 .auth-list__item {
@@ -94,8 +133,6 @@
 .auth-list__link {
   display: flex;
   align-items: center;
-  padding-top: 20px;
-  padding-bottom: 20px;
 
   font-weight: 500;
   color: #757575;
@@ -104,6 +141,18 @@
   &:focus,
   &:hover {
     color: $primery-accent-color;
+  }
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    display: none;
+  }
+  @media screen and (min-width: 768px) {
+    &:not(:last-child) {
+      padding-bottom: 10px;
+    }
+  }
+  @media screen and (min-width: 1600px) {
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 }
 
@@ -131,5 +180,21 @@
   .auth-list__link:hover &,
   .auth-list__link:focus & {
     fill: $primery-accent-color;
+  }
+}
+
+.button-menu {
+  background-color: transparent;
+}
+
+.button-menu__icon--menu {
+  .button-menu__is-open & {
+    display: none;
+  }
+}
+.button-menu__icon--close {
+  display: none;
+  .button-menu__is-open & {
+    display: block;
   }
 }
