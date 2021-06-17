@@ -26,19 +26,16 @@
   left: 50%;
 
   transform: translate(-50%, -50%);
-  width: 528px;
-  height: 581px;
 
   background-color: $primary-background-color;
   box-shadow: $box-shadow;
   border-radius: 4px;
 
-  @media screen and (min-width: 480px) and (max-width: 767px) {
+  @media screen and (min-width: 480px) and (max-width: 1599px) {
     width: 450px;
     height: 609px;
   }
-  @media screen and (min-width: 768px) {
-  }
+
   @media screen and (min-width: 1600px) {
     width: 528px;
     height: 581px;
@@ -92,12 +89,8 @@
 
   color: $primary-text-color;
 
-  @media screen and (min-width: 480px) and (max-width: 767px) {
+  @media screen and (min-width: 480px) and (max-width: 1599px) {
     line-height: 1.5;
-  }
-  @media screen and (min-width: 768px) {
-  }
-  @media screen and (min-width: 1600px) {
   }
 }
 
@@ -200,27 +193,24 @@ svg {
 }
 
 .customer-form__text--gray {
-  line-height: 1.7;
   color: #757575;
 
-  @media screen and (min-width: 480px) and (max-width: 767px) {
+  @media screen and (min-width: 480px) and (max-width: 1599px) {
     font-size: 12px;
   }
-  @media screen and (min-width: 768px) {
-  }
-  @media screen and (min-width: 1600px) {
+  @media screen and(min-width: 1600px) {
+    line-height: 1.7;
   }
 }
 
 .customer-form__link--underline {
   text-decoration: underline;
 
-  @media screen and (min-width: 480px) and (max-width: 767px) {
+  @media screen and (min-width: 480px) and (max-width: 1599px) {
     font-size: 12px;
   }
-  @media screen and (min-width: 768px) {
-  }
   @media screen and (min-width: 1600px) {
+    line-height: 1.7;
   }
 }
 

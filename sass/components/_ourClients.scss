@@ -6,23 +6,19 @@
   @media screen and (min-width: 480px) and (max-width: 1599px) {
     margin: -15px;
   }
-  @media screen and (min-width: 768px) {
-  }
   @media screen and (min-width: 1600px) {
   }
 }
 
 .сlients-list__item {
   display: flex;
-  @media screen and (min-width: 480px) and (max-width: 767px) {
+  @media screen and (min-width: 480px) and (max-width: 1599px) {
     margin: 15px;
 
-    width: calc((100% - 64px) / 2);
+    width: calc((100% - 60px) / 2);
   }
-  @media screen and (min-width: 768px) {
-    margin: 15px;
-
-    width: calc((100% - 96px) / 3);
+  @media screen and (min-width: 768px) and (max-width: 1599px) {
+    width: calc((100% - 90px) / 3);
   }
   @media screen and (min-width: 1600px) {
     &:not(:last-child) {
@@ -37,16 +33,14 @@
   transition: border-color $patternTime $patternCubicBuzier;
   cursor: pointer;
 
-  @media screen and (min-width: 480px) and (max-width: 767px) {
-    display: block;
-    width: 100%;
+  @media screen and (min-width: 480px) {
+    padding: 15px 51px;
   }
   @media screen and (min-width: 768px) {
+    padding: 15px 60px;
   }
   @media screen and (min-width: 1600px) {
-    &:not(:last-child) {
-      margin-right: 30px;
-    }
+    padding: 15px 31px;
   }
 
   &:hover,
@@ -63,12 +57,12 @@ svg {
     fill: $primary-icon-color;
     transition: fill $patternTime $patternCubicBuzier;
 
-    @media screen and (min-width: 480px) {
-      margin: 16px 52px;
-    }
-    @media screen and (min-width: 768px) {
-      margin: 16px 58px;
-    }
+    // @media screen and (min-width: 480px) {
+    //   margin: 16px 52px;
+    // }
+    // @media screen and (min-width: 768px) {
+    //   margin: 16px 58px;
+    // }
   }
   .сlients-list__link:hover &,
   .сlients-list__link:focus & {
