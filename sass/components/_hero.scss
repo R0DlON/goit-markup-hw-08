@@ -13,6 +13,15 @@
       rgba(47, 48, 58, 0.4)
     ),
     url(../../Images/Hero-background.jpg);
+
+  @media screen and (min-width: 480px) {
+    width: 480px;
+    margin: 0;
+  }
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1600px) {
+  }
 }
 
 .hero__title {
@@ -23,6 +32,15 @@
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
+
+  @media screen and (min-width: 480px) and (max-width: 1599px) {
+    font-size: 26px;
+    line-height: 1.6;
+  }
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1600px) {
+  }
 }
 .hero__button {
   margin-top: 30px;

@@ -1,24 +1,49 @@
 /* Our Clients */
 .сlients-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
+  @media screen and (min-width: 480px) and (max-width: 1599px) {
+    margin: -15px;
+  }
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1600px) {
+  }
 }
 
 .сlients-list__item {
   display: flex;
-
-  &:not(:last-child) {
-    margin-right: 30px;
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    margin: 15px;
+    width: cacl((480 - 15px * 2) /2);
+  }
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1600px) {
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
   }
 }
 
 .сlients-list__link {
-  padding: 15px 30px;
+  // padding: 15px 30px;
 
   border: 1px solid $primary-icon-color;
   border-radius: 4px;
   transition: border-color $patternTime $patternCubicBuzier;
   cursor: pointer;
+
+  @media screen and (min-width: 480px) and (max-width: 1599px) {
+  }
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1600px) {
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
 
   &:hover,
   &:focus {
