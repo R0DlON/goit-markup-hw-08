@@ -3,8 +3,6 @@
   margin-left: auto;
 
   max-width: 1600px;
-  padding-top: 200px;
-  padding-bottom: 200px;
 
   background-color: #757575;
   background-image: linear-gradient(
@@ -14,13 +12,20 @@
     ),
     url(../../Images/Hero-background.jpg);
 
-  @media screen and (min-width: 480px) and(max-width: 787px) {
-    width: 480px;
-    margin: 0;
+  @media screen and (min-width: 480px) and(max-width: 767px) {
+    max-width: 480px;
+    padding-top: 120px;
+    padding-bottom: 120px;
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and(max-width: 1599px) {
+    max-width: 768px;
+    padding-top: 120px;
+    padding-bottom: 120px;
   }
   @media screen and (min-width: 1600px) {
+    max-width: 1600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
   }
 }
 
@@ -36,10 +41,6 @@
   @media screen and (min-width: 480px) and (max-width: 1599px) {
     font-size: 26px;
     line-height: 1.6;
-  }
-  @media screen and (min-width: 768px) {
-  }
-  @media screen and (min-width: 1600px) {
   }
 }
 .hero__button {

@@ -1,20 +1,17 @@
 /* Шапка */
 .header {
   display: flex;
+  margin-left: auto;
+  margin-right: auto;
 
   align-items: center;
 
   border-bottom: 1px solid #ececec;
   @media screen and (min-width: 480px) {
-    width: 480px;
     height: 60px;
   }
   @media screen and (min-width: 768px) {
     height: 80px;
-    width: 768px;
-  }
-  @media screen and (min-width: 1600px) {
-    width: 1600px;
   }
 }
 
@@ -31,14 +28,7 @@
     color: $primery-accent-color;
   }
 
-  @media screen and (min-width: 480px) and (max-width: 767px) {
-    display: flex;
-    justify-content: center;
-    font-size: 24px;
-  }
-  @media screen and (min-width: 768px) {
-    display: flex;
-    justify-content: center;
+  @media screen and (min-width: 480px) and (max-width: 1599px) {
     font-size: 24px;
   }
   @media screen and (min-width: 1600px) {
@@ -56,10 +46,6 @@
   display: flex;
   @media screen and (min-width: 480px) and (max-width: 767px) {
     display: none;
-  }
-  @media screen and (min-width: 768px) {
-  }
-  @media screen and (min-width: 1600px) {
   }
 }
 
@@ -87,7 +73,7 @@
     width: 100%;
     height: 4px;
 
-    background-color: #2196f3;
+    background-color: $primery-accent-color;
     border-radius: 2px;
 
     transition: background-color $patternTime $patternCubicBuzier;
@@ -115,13 +101,13 @@
   }
   @media screen and (min-width: 768px) {
     display: flex;
+
     flex-direction: column;
   }
   @media screen and (min-width: 1600px) {
     margin-left: auto;
 
-    display: flex;
-    width: 1600px;
+    flex-direction: row;
   }
 }
 
@@ -131,7 +117,7 @@
 
   @media screen and (min-width: 480px) and (max-width: 767px) {
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1599px) {
     margin-right: 0px;
     &:not(:last-child) {
       margin-bottom: 10px;
