@@ -2,7 +2,7 @@
 .сlients-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+
   @media screen and (min-width: 480px) and (max-width: 1599px) {
     margin: -15px;
   }
@@ -16,9 +16,13 @@
   display: flex;
   @media screen and (min-width: 480px) and (max-width: 767px) {
     margin: 15px;
-    width: cacl((480 - 15px * 2) /2);
+
+    width: calc((100% - 64px) / 2);
   }
   @media screen and (min-width: 768px) {
+    margin: 15px;
+
+    width: calc((100% - 96px) / 3);
   }
   @media screen and (min-width: 1600px) {
     &:not(:last-child) {
@@ -28,14 +32,14 @@
 }
 
 .сlients-list__link {
-  // padding: 15px 30px;
-
   border: 1px solid $primary-icon-color;
   border-radius: 4px;
   transition: border-color $patternTime $patternCubicBuzier;
   cursor: pointer;
 
-  @media screen and (min-width: 480px) and (max-width: 1599px) {
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    display: block;
+    width: 100%;
   }
   @media screen and (min-width: 768px) {
   }
@@ -58,6 +62,13 @@ svg {
 
     fill: $primary-icon-color;
     transition: fill $patternTime $patternCubicBuzier;
+
+    @media screen and (min-width: 480px) {
+      margin: 16px 52px;
+    }
+    @media screen and (min-width: 768px) {
+      margin: 16px 58px;
+    }
   }
   .сlients-list__link:hover &,
   .сlients-list__link:focus & {

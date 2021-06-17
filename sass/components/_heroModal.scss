@@ -32,6 +32,17 @@
   background-color: $primary-background-color;
   box-shadow: $box-shadow;
   border-radius: 4px;
+
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    width: 450px;
+    height: 609px;
+  }
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1600px) {
+    width: 528px;
+    height: 581px;
+  }
 }
 
 .modal__button--close {
@@ -80,6 +91,14 @@
   text-align: center;
 
   color: $primary-text-color;
+
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    line-height: 1.5;
+  }
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1600px) {
+  }
 }
 
 .customer-form__text {
@@ -183,10 +202,26 @@ svg {
 .customer-form__text--gray {
   line-height: 1.7;
   color: #757575;
+
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    font-size: 12px;
+  }
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1600px) {
+  }
 }
 
 .customer-form__link--underline {
   text-decoration: underline;
+
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    font-size: 12px;
+  }
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1600px) {
+  }
 }
 
 .customer-form__button {
