@@ -1,0 +1,30 @@
+.menu-mobile {
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    display: none;
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+
+  &.menu-mobile--is-open {
+    @media screen and (min-width: 480px) and (max-width: 767px) {
+      display: block;
+      position: fixed;
+
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 796px;
+      padding-left: 40px;
+      padding-right: 40px;
+      padding-top: 45px;
+      padding-bottom: 45px;
+      overflow-y: hidden;
+      background-color: violet;
+      pointer-events: none;
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+}

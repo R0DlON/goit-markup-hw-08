@@ -9,6 +9,7 @@
   border-bottom: 1px solid #ececec;
   @media screen and (min-width: 480px) {
     height: 60px;
+    position: relative;
   }
   @media screen and (min-width: 768px) {
     height: 80px;
@@ -45,46 +46,48 @@
 .nav-list {
   display: flex;
   @media screen and (min-width: 480px) and (max-width: 767px) {
-    display: none;
+    display: flex;
+    margin-bottom: 300px;
+
+    flex-direction: column;
+    align-items: flex-start;
   }
 }
 
 .nav-list__item {
-  &:not(:last-child) {
-    margin-right: 50px;
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 35px;
+    }
   }
-}
 
-.nav-list__link {
-  &.nav-list__link--current {
-    position: relative;
-    font-weight: 500;
-    color: $primery-accent-color;
+  @media screen and(min-width: 768px) {
+    &:not(:last-child) {
+      margin-right: 50px;
+    }
   }
 }
 
 .nav-list__link--current {
-  &::after {
-    content: "";
-    position: absolute;
-    top: 115%;
-    right: 0%;
+  @media screen and(min-width: 768px) {
+    &::after {
+      content: "";
+      position: absolute;
+      top: 115%;
+      right: 0%;
 
-    width: 100%;
-    height: 4px;
+      width: 100%;
+      height: 4px;
 
-    background-color: $primery-accent-color;
-    border-radius: 2px;
+      background-color: $primery-accent-color;
+      border-radius: 2px;
 
-    transition: background-color $patternTime $patternCubicBuzier;
+      transition: background-color $patternTime $patternCubicBuzier;
+    }
+    text-decoration: none;
   }
-  text-decoration: none;
 }
-
 .nav-list__link {
-  padding-top: 20px;
-  padding-bottom: 20px;
-
   font-weight: 500;
   color: $primary-text-color;
 
@@ -93,15 +96,29 @@
   &:hover {
     color: $primery-accent-color;
   }
+  &.nav-list__link--current {
+    position: relative;
+    font-weight: 500;
+    color: $primery-accent-color;
+  }
+
+  @media screen and(min-width: 480px) {
+    font-size: 40px;
+    letter-spacing: 0.02em;
+  }
+  @media screen and(min-width: 767px) {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
 }
 
 .auth-list {
+  display: flex;
   @media screen and (min-width: 480px) and (max-width: 767px) {
-    display: none;
+    flex-direction: column-reverse;
+    align-items: flex-start;
   }
   @media screen and (min-width: 768px) {
-    display: flex;
-
     flex-direction: column;
   }
   @media screen and (min-width: 1600px) {
@@ -116,6 +133,9 @@
   align-items: center;
 
   @media screen and (min-width: 480px) and (max-width: 767px) {
+    &:last-child {
+      margin-bottom: 35px;
+    }
   }
   @media screen and (min-width: 768px) and (max-width: 1599px) {
     margin-right: 0px;
@@ -131,9 +151,6 @@
 }
 
 .auth-list__link {
-  display: flex;
-  align-items: center;
-
   font-weight: 500;
   color: #757575;
 
@@ -143,9 +160,21 @@
     color: $primery-accent-color;
   }
   @media screen and (min-width: 480px) and (max-width: 767px) {
-    display: none;
+    display: block;
+
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.02em;
+
+    .auth-list__item:last-child & {
+      font-size: 34px;
+      letter-spacing: 0.02em;
+      color: $primery-accent-color;
+    }
   }
   @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
     &:not(:last-child) {
       padding-bottom: 10px;
     }
@@ -163,6 +192,10 @@
   height: 12px;
 
   transition: fill $patternTime $patternCubicBuzier;
+
+  @media screen and(min-width:480px) and (max-width: 767px) {
+    display: none;
+  }
 }
 
 .auth-list__icon--phoneLocation {
@@ -171,6 +204,10 @@
   width: 10px;
   height: 16px;
   transition: fill $patternTime $patternCubicBuzier;
+
+  @media screen and(min-width:480px) and (max-width: 767px) {
+    display: none;
+  }
 }
 
 .auth-list__icon {
@@ -180,6 +217,10 @@
   .auth-list__link:hover &,
   .auth-list__link:focus & {
     fill: $primery-accent-color;
+
+    @media screen and(min-width:480px) and (max-width: 767px) {
+      display: none;
+    }
   }
 }
 
@@ -206,22 +247,6 @@
     display: block;
   }
 
-  @media screen and (min-width: 768px) {
-    display: none;
-  }
-}
-
-.menu-mobile {
-  position: absolute;
-
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-
-  pointer-events: none;
-  visibility: hidden;
-  opacity: 0;
   @media screen and (min-width: 768px) {
     display: none;
   }
