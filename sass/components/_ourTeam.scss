@@ -7,7 +7,7 @@
   @media screen and (min-width: 480px) {
     display: block;
   }
-  @media screen and (min-width: 768px) and(max-width: 1599px) {
+  @media screen and (min-width: 768px) and(max-width: 1199px) {
     margin: -15px;
   }
   @media screen and (min-width: 1200px) {
@@ -25,7 +25,7 @@
       margin-bottom: 30px;
     }
   }
-  @media screen and (min-width: 768px) and (max-width: 1599px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     display: inline-block;
     margin: 15px;
 
@@ -41,7 +41,7 @@
 .team-list__box {
   padding-top: 30px;
 
-  @media screen and (min-width: 480px) and (max-width: 1599px) {
+  @media screen and (min-width: 480px) and (max-width: 1199px) {
     padding-bottom: 25px;
   }
   @media screen and (min-width: 1200px) {

@@ -1,9 +1,9 @@
 //  /* What we do */
 .section--ourWork-hide {
-  @media screen and (min-width: 480px) and (max-width: 1599px) {
+  @media screen and (min-width: 480px) and (max-width: 1199px) {
     display: none;
   }
-  @media screen and (min-width: 1600px) {
+  @media screen and (min-width: 1200px) {
     display: flex;
   }
 }

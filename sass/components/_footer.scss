@@ -14,12 +14,12 @@
     flex-direction: column;
     align-items: center;
   }
-  @media screen and (min-width: 768px) and (max-width: 1599px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     margin-bottom: 60px;
 
     display: inline-block;
   }
-  @media screen and (min-width: 1600px) {
+  @media screen and (min-width: 1200px) {
     margin-right: 70px;
   }
 }
@@ -29,7 +29,7 @@
 
   text-align: center;
   color: #ffffff;
-  @media screen and (min-width: 768px) and (max-width: 1599px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     display: block;
   }
 }
@@ -48,7 +48,7 @@
   &:last-child {
     margin-bottom: 0;
   }
-  @media screen and (min-width: 480px) and (max-width: 1599px) {
+  @media screen and (min-width: 480px) and (max-width: 1199px) {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -73,10 +73,10 @@
   @media screen and (min-width: 480px) and (max-width: 767px) {
     margin-bottom: 60px;
   }
-  @media screen and (min-width: 768px) and (max-width: 1599px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     display: inline-block;
   }
-  @media screen and (min-width: 1600px) {
+  @media screen and (min-width: 1200px) {
     margin-right: 93px;
   }
 }
@@ -91,7 +91,7 @@
   }
   @media screen and (min-width: 768px) {
   }
-  @media screen and (min-width: 1600px) {
+  @media screen and (min-width: 1200px) {
     margin-right: 70px;
   }
 }
@@ -118,7 +118,7 @@ svg {
   @media screen and (min-width: 768px) {
     display: block;
   }
-  @media screen and (min-width: 1600px) {
+  @media screen and (min-width: 1200px) {
     display: flex;
   }
 }
@@ -128,7 +128,7 @@ svg {
   }
   @media screen and (min-width: 768px) {
   }
-  @media screen and (min-width: 1600px) {
+  @media screen and (min-width: 1200px) {
     display: flex;
     flex-direction: column;
   }
@@ -140,11 +140,11 @@ svg {
   font-weight: bold;
   color: #ffffff;
 
-  @media screen and (min-width: 480px) and (max-width: 1599px) {
+  @media screen and (min-width: 480px) and (max-width: 1199px) {
     text-align: center;
   }
 
-  @media screen and (min-width: 1600px) {
+  @media screen and (min-width: 1200px) {
   }
 }
 
@@ -153,7 +153,7 @@ svg {
   }
   @media screen and (min-width: 768px) {
   }
-  @media screen and (min-width: 1600px) {
+  @media screen and (min-width: 1200px) {
     display: flex;
     align-items: center;
   }
@@ -174,7 +174,7 @@ svg {
   &:focus {
     border-color: $primery-accent-color;
   }
-  @media screen and (min-width: 480px) and (max-width: 1599px) {
+  @media screen and (min-width: 480px) and (max-width: 1199px) {
     margin-bottom: 20px;
 
     width: 100%;
@@ -182,7 +182,7 @@ svg {
   @media screen and (min-width: 768px) {
     width: 450px;
   }
-  @media screen and (min-width: 1600px) {
+  @media screen and (min-width: 1200px) {
     margin-right: 12px;
 
     width: 360px;
@@ -213,7 +213,7 @@ svg {
   }
   @media screen and (min-width: 768px) {
   }
-  @media screen and (min-width: 1600px) {
+  @media screen and (min-width: 1200px) {
   }
 }
 

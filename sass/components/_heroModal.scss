@@ -31,12 +31,12 @@
   box-shadow: $box-shadow;
   border-radius: 4px;
 
-  @media screen and (min-width: 480px) and (max-width: 1599px) {
+  @media screen and (min-width: 480px) and (max-width: 1199px) {
     width: 450px;
     height: 609px;
   }
 
-  @media screen and (min-width: 1600px) {
+  @media screen and (min-width: 1200px) {
     width: 528px;
     height: 581px;
   }
@@ -89,7 +89,7 @@
 
   color: $primary-text-color;
 
-  @media screen and (min-width: 480px) and (max-width: 1599px) {
+  @media screen and (min-width: 480px) and (max-width: 1199px) {
     line-height: 1.5;
   }
 }
@@ -195,10 +195,10 @@ svg {
 .customer-form__text--gray {
   color: #757575;
 
-  @media screen and (min-width: 480px) and (max-width: 1599px) {
+  @media screen and (min-width: 480px) and (max-width: 1199px) {
     font-size: 12px;
   }
-  @media screen and(min-width: 1600px) {
+  @media screen and(min-width: 1200px) {
     line-height: 1.7;
   }
 }
@@ -206,10 +206,10 @@ svg {
 .customer-form__link--underline {
   text-decoration: underline;
 
-  @media screen and (min-width: 480px) and (max-width: 1599px) {
+  @media screen and (min-width: 480px) and (max-width: 1199px) {
     font-size: 12px;
   }
-  @media screen and (min-width: 1600px) {
+  @media screen and (min-width: 1200px) {
     line-height: 1.7;
   }
 }
