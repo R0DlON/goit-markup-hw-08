@@ -1,4 +1,6 @@
 .button-menu {
+  display: block;
+
   background-color: transparent;
 
   @media screen and (min-width: 768px) {
@@ -7,6 +9,11 @@
 }
 
 .button-menu__icon--menu {
+  transition: fill $patternTime $patternCubicBuzier;
+  .button-menu:focus &,
+  .button-menu:hover & {
+    fill: $primery-accent-color;
+  }
   .button-menu__is-open & {
     display: none;
   }
@@ -16,9 +23,18 @@
 }
 
 .button-menu__icon--close {
+  transition: fill $patternTime $patternCubicBuzier;
+  .button-menu:focus &,
+  .button-menu:hover & {
+    fill: $primery-accent-color;
+  }
   display: none;
+
   .button-menu__is-open & {
     display: block;
+    position: absolute;
+
+    z-index: 999;
   }
 
   @media screen and (min-width: 768px) {
@@ -57,7 +73,7 @@
 
       opacity: 1;
       visibility: visible;
-      z-index: 999;
+      z-index: 5;
     }
   }
 }
