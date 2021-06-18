@@ -21,6 +21,7 @@
     width: calc((100% - 90px) / 3);
   }
   @media screen and (min-width: 1600px) {
+    width: calc((100% - 150px) / 6);
     &:not(:last-child) {
       margin-right: 30px;
     }
@@ -56,13 +57,6 @@ svg {
 
     fill: $primary-icon-color;
     transition: fill $patternTime $patternCubicBuzier;
-
-    // @media screen and (min-width: 480px) {
-    //   margin: 16px 52px;
-    // }
-    // @media screen and (min-width: 768px) {
-    //   margin: 16px 58px;
-    // }
   }
   .сlients-list__link:hover &,
   .сlients-list__link:focus & {

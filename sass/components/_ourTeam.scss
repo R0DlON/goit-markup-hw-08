@@ -7,7 +7,7 @@
   @media screen and (min-width: 480px) {
     display: block;
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and(max-width: 1599px) {
     margin: -15px;
   }
   @media screen and (min-width: 1600px) {

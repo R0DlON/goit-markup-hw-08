@@ -7,25 +7,31 @@
 }
 // Address
 .address-container {
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 480px) and (max-width: 767px) {
     display: flex;
     margin-bottom: 60px;
 
     flex-direction: column;
     align-items: center;
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1599px) {
+    margin-bottom: 60px;
+
     display: inline-block;
-    margin-right: 190px;
   }
   @media screen and (min-width: 1600px) {
     margin-right: 70px;
   }
 }
 
-.logo--whiteColor {
+.logo--FooterWhiteColor {
+  margin-right: 0;
+
   text-align: center;
   color: #ffffff;
+  @media screen and (min-width: 768px) and (max-width: 1599px) {
+    display: block;
+  }
 }
 
 .address {
@@ -42,15 +48,10 @@
   &:last-child {
     margin-bottom: 0;
   }
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 480px) and (max-width: 1599px) {
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-  @media screen and (min-width: 768px) {
-  }
-  @media screen and (min-width: 1600px) {
-    margin-right: 70px;
   }
 }
 
@@ -67,12 +68,12 @@
   }
 }
 
-// Icon-Container
+// Social-Container
 .social-container {
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 480px) and (max-width: 767px) {
     margin-bottom: 60px;
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1599px) {
     display: inline-block;
   }
   @media screen and (min-width: 1600px) {
@@ -97,6 +98,13 @@
 
 .social-list__item--spaceBetween:not(:last-child) {
   margin-right: 10px;
+}
+
+.social-list--beginStart {
+  @media screen and (min-width: 1600px) {
+    display: flex;
+    justify-content: start;
+  }
 }
 
 .social-list__link--opacityBackground {
@@ -139,11 +147,10 @@ svg {
   font-weight: bold;
   color: #ffffff;
 
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 480px) and (max-width: 1599px) {
     text-align: center;
   }
-  @media screen and (min-width: 768px) {
-  }
+
   @media screen and (min-width: 1600px) {
   }
 }
@@ -174,7 +181,7 @@ svg {
   &:focus {
     border-color: $primery-accent-color;
   }
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 480px) and (max-width: 1599px) {
     margin-bottom: 20px;
 
     width: 100%;
