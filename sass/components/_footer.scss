@@ -100,13 +100,6 @@
   margin-right: 10px;
 }
 
-.social-list--beginStart {
-  @media screen and (min-width: 1600px) {
-    display: flex;
-    justify-content: start;
-  }
-}
-
 .social-list__link--opacityBackground {
   background-color: rgba(255, 255, 255, 0.1);
 }
