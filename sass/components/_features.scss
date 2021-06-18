@@ -3,6 +3,8 @@
 .features-list {
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     margin: -15px;
+    display: flex;
+    flex-wrap: wrap;
   }
   @media screen and (min-width: 1200px) {
     display: flex;
