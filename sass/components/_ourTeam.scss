@@ -10,7 +10,7 @@
   @media screen and (min-width: 768px) and(max-width: 1599px) {
     margin: -15px;
   }
-  @media screen and (min-width: 1600px) {
+  @media screen and (min-width: 1200px) {
     display: flex;
   }
 }
@@ -31,7 +31,7 @@
 
     width: calc((100% - 64px) / 2);
   }
-  @media screen and (min-width: 1600px) {
+  @media screen and (min-width: 1200px) {
     &:not(:last-child) {
       margin-right: 30px;
     }
@@ -44,7 +44,7 @@
   @media screen and (min-width: 480px) and (max-width: 1599px) {
     padding-bottom: 25px;
   }
-  @media screen and (min-width: 1600px) {
+  @media screen and (min-width: 1200px) {
     padding-bottom: 30px;
   }
 }
@@ -72,23 +72,56 @@
 // Social-Box
 
 .social-list {
-  display: flex;
-  justify-content: center;
+  @media screen and(min-width: 480px) {
+    display: flex;
+    justify-content: center;
+  }
+  .social-container & {
+    @media screen and(min-width: 1200px) {
+    }
+    justify-content: flex-start;
+  }
+  .menu-mobile & {
+    @media screen and(min-width: 480px) and (max-width: 767px) {
+      justify-content: flex-start;
+    }
+    @media screen and(min-width: 768px) {
+      display: none;
+    }
+  }
 }
-
 .social-list__item {
   &:not(:last-child) {
     margin-right: 5px;
   }
+
+  .menu-mobile .social-list &:not(:last-child) {
+    margin-right: 10px;
+  }
 }
 
 .social-list__link {
-  display: flex;
+  @media screen and(min-width: 480px) {
+    display: flex;
 
-  padding: 12px;
+    padding: 12px;
 
-  background-color: #ffffff;
-  border-radius: 50%;
+    background-color: #ffffff;
+    border-radius: 50%;
+  }
+  .menu-mobile & {
+    @media screen and (min-width: 480px) {
+      padding: 0px;
+
+      font-size: 18px;
+      letter-spacing: 00.02em;
+      color: $primery-accent-color;
+
+      background-color: transparent;
+      border-radius: 0px;
+    }
+  }
+
   transition: background-color $patternTime $patternCubicBuzier;
   cursor: pointer;
   &:hover,
@@ -97,6 +130,12 @@
 
     background-color: $primery-accent-color;
   }
+}
+
+.social-list__span {
+  margin-left: 10px;
+
+  color: #757575;
 }
 
 svg {

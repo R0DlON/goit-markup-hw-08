@@ -225,22 +225,27 @@
     }
   }
 }
-.social-list__item--spaceBetween:not(:last-child) {
-  margin-right: 10px;
+
+.social-list__link--olnyText {
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+  }
+  font-size: 18px;
+  letter-spacing: 00.02em;
+  color: $primery-accent-color;
+  background-color: transparent;
 }
 
-.social-list--beginStart {
-  .menu-mobile & {
-    @media screen and (min-width: 480px) {
-      bottom: 0px;
+// .social-list--beginStart {
+//   .menu-mobile & {
+//     @media screen and (min-width: 480px) and(max-width:767px) {
+//       bottom: 0px;
 
-      display: flex;
-      justify-content: start;
-    }
-  }
+//       display: flex;
+//       justify-content: start;
+//     }
+//   }
 
-  @media screen and (min-width: 1600px) {
-    display: flex;
-    justify-content: start;
-  }
-}
+//   @media screen and (min-width: 768px) {
+//     display: none;
+//   }
+// }
