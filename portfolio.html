@@ -63,6 +63,23 @@
             >
           </li>
         </ul>
+        <button type="button" class="button-menu" data-menu-button>
+          <svg
+            width="24px"
+            height="18px"
+            aria-label="Переключатель мобильного меню"
+          >
+            <use
+              href="./Images/sprite.svg#menu"
+              class="button-menu__icon--menu"
+            ></use>
+            <use
+              href="./Images/sprite.svg#close"
+              class="button-menu__icon--close"
+            ></use>
+          </svg>
+          <div class="menu-mobile">asdasda</div>
+        </button>
       </div>
     </header>
     <!-- Main  part -->
@@ -300,7 +317,7 @@
     <footer class="footer">
       <div class="container container--flex-footer">
         <div class="address-container">
-          <a href="" class="logo logo--whiteColor"
+          <a href="" class="logo logo--FooterWhiteColor"
             ><span class="logo logo--blueColor">Web</span>Studio
           </a>
           <address class="address">
@@ -323,7 +340,7 @@
         </div>
         <div class="social-container">
           <h3 class="social-title">Присоединяйтесь</h3>
-          <ul class="social-list">
+          <ul class="social-list social-list--beginStart">
             <li class="social-list__item social-list__item--spaceBetween">
               <a
                 class="social-list__link social-list__link--opacityBackground"
@@ -391,5 +408,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

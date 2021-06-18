@@ -4,11 +4,25 @@
 
   display: flex;
   justify-content: center;
+
+  @media screen and(min-width: 480px) and (max-width: 767px) {
+    display: block;
+  }
+  @media screen and(min-width:768px) and (max-width: 1599px) {
+    margin-bottom: 30px;
+  }
 }
 
 .filter-list__item {
   &:not(:last-child) {
     margin-right: 8px;
+  }
+  @media screen and(min-width: 480px) and (max-width: 767px) {
+    display: inline-block;
+
+    &:nth-child(-n + 3) {
+      margin-bottom: 15px;
+    }
   }
 }
 

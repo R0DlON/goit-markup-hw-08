@@ -6,6 +6,10 @@ body {
   color: $primary-text-color;
   background-color: $primary-white-color;
   position: relative;
+
+  @media screen and (min-width: 0) and (max-width: 479px) {
+    overflow-x: hidden;
+  }
 }
 
 .container {

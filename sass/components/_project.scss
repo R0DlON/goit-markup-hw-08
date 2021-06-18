@@ -1,16 +1,18 @@
 /* Проекты */
 
 .project-list {
-  margin: -15px;
+  @media screen and(min-width: 480px) and (max-width: 767px) {
+    display: block;
+  }
+  @media screen and(min-width: 768px) {
+    margin: -15px;
 
-  display: flex;
-  flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .project-list__item {
-  width: 370px;
-  margin: 15px;
-
   background: #ffffff;
   border: 1px solid #eeeeee;
   box-sizing: border-box;
@@ -20,7 +22,56 @@
   &:focus {
     box-shadow: $box-shadow;
   }
+  @media screen and(min-width: 480px) and (max-width: 767px) {
+    width: 100%;
+
+    &:not(:last-child) {
+      margin-bottom: 15px;
+    }
+  }
+  @media screen and(min-width: 768px) {
+    margin: 15px;
+
+    width: calc((100% - 60px) / 2);
+  }
+  @media screen and(min-width: 1600px) {
+    width: calc((100% - 90px) / 3);
+  }
 }
+// ЕСТЬ ещё такой вариант
+// .project-list {
+//   margin: -15px;
+
+//   display: flex;
+//   flex-wrap: wrap;
+
+//   @media screen and(min-width: 480px) and (max-width: 767px) {
+//     display: block;
+//   }
+// }
+
+// .project-list__item {
+//   margin: 15px;
+
+//   background: #ffffff;
+//   border: 1px solid #eeeeee;
+//   box-sizing: border-box;
+//   transition: box-shadow $patternTime $patternCubicBuzier;
+
+//   &:hover,
+//   &:focus {
+//     box-shadow: $box-shadow;
+//   }
+//   @media screen and(min-width: 480px) {
+//     width: calc(100%);
+//   }
+//   @media screen and(min-width: 768px) {
+//     width: calc((100% - 60px) / 2);
+//   }
+//   @media screen and(min-width: 1600px) {
+//     width: calc((100% - 90px) / 3);
+//   }
+// }
 
 .project-list__link {
   text-decoration: none;
