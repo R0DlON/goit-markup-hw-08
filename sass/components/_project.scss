@@ -160,3 +160,13 @@
   line-height: 1.8;
   color: #757575;
 }
+img {
+  @media screen (max-width: 767px) {
+    .project-list__item & {
+      @media screen and (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+      }
+    }
+  }
+}
