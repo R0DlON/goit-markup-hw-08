@@ -43,7 +43,7 @@
 }
 
 .menu-mobile {
-  @media screen and (min-width: 480px) and (max-width: 767px) {
+  @media screen and (min-width: 320px) and (max-width: 767px) {
     display: none;
 
     opacity: 0;
@@ -56,7 +56,7 @@
   }
 
   &.menu-mobile--is-open {
-    @media screen and (min-width: 480px) and (max-width: 767px) {
+    @media screen and (min-width: 320px) and (max-width: 767px) {
       display: block;
       position: fixed;
 

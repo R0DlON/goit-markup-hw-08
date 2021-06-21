@@ -7,7 +7,7 @@
   align-items: center;
 
   border-bottom: 1px solid #ececec;
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 320px) {
     height: 60px;
     position: relative;
   }
@@ -29,7 +29,7 @@
     color: $primery-accent-color;
   }
 
-  @media screen and (min-width: 480px) and (max-width: 1199px) {
+  @media screen and (min-width: 320px) and (max-width: 1199px) {
     font-size: 24px;
   }
   @media screen and (min-width: 767px) and (max-width: 1199px) {
@@ -57,8 +57,7 @@
 
 .nav-list {
   display: flex;
-  @media screen and (min-width: 480px) and (max-width: 767px) {
-    display: flex;
+  @media screen and (min-width: 320px) and (max-width: 767px) {
     margin-bottom: 300px;
 
     flex-direction: column;
@@ -67,7 +66,7 @@
 }
 
 .nav-list__item {
-  @media screen and (min-width: 480px) and (max-width: 767px) {
+  @media screen and (min-width: 320px) and (max-width: 767px) {
     &:not(:last-child) {
       margin-bottom: 35px;
     }
@@ -114,7 +113,7 @@
     color: $primery-accent-color;
   }
 
-  @media screen and(min-width: 480px) and (max-width: 767px) {
+  @media screen and(min-width: 320px) and (max-width: 767px) {
     font-size: 40px;
     letter-spacing: 0.02em;
   }
@@ -128,7 +127,7 @@
 
 .auth-list {
   display: flex;
-  @media screen and (min-width: 480px) and (max-width: 767px) {
+  @media screen and (min-width: 320px) and (max-width: 767px) {
     margin-bottom: 65px;
 
     flex-direction: column-reverse;
@@ -148,7 +147,7 @@
   display: flex;
   align-items: center;
 
-  @media screen and (min-width: 480px) and (max-width: 767px) {
+  @media screen and (min-width: 320px) and (max-width: 767px) {
     &:last-child {
       margin-bottom: 35px;
     }
@@ -176,7 +175,7 @@
   &:hover {
     color: $primery-accent-color;
   }
-  @media screen and (min-width: 480px) and (max-width: 767px) {
+  @media screen and (min-width: 320px) and (max-width: 767px) {
     display: block;
 
     font-size: 24px;
@@ -215,7 +214,7 @@
 
   transition: fill $patternTime $patternCubicBuzier;
 
-  @media screen and(min-width:480px) and (max-width: 767px) {
+  @media screen and(min-width:320px) and (max-width: 767px) {
     display: none;
   }
 }
@@ -227,7 +226,7 @@
   height: 16px;
   transition: fill $patternTime $patternCubicBuzier;
 
-  @media screen and(min-width:480px) and (max-width: 767px) {
+  @media screen and(min-width:320px) and (max-width: 767px) {
     display: none;
   }
 }
@@ -240,17 +239,8 @@
   .auth-list__link:focus & {
     fill: $primery-accent-color;
 
-    @media screen and(min-width:480px) and (max-width: 767px) {
+    @media screen and(min-width:320px) and (max-width: 767px) {
       display: none;
     }
   }
-}
-
-.social-list__link--olnyText {
-  @media screen and (min-width: 480px) and (max-width: 767px) {
-  }
-  font-size: 18px;
-  letter-spacing: 00.02em;
-  color: $primery-accent-color;
-  background-color: transparent;
 }

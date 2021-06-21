@@ -1,5 +1,8 @@
 /* Footer */
 .footer {
+  margin-left: auto;
+  margin-right: auto;
+
   padding-top: 60px;
   padding-bottom: 60px;
 
@@ -7,7 +10,7 @@
 }
 // Address
 .address-container {
-  @media screen and (min-width: 480px) and (max-width: 767px) {
+  @media screen and (min-width: 320px) and (max-width: 767px) {
     display: flex;
     margin-bottom: 60px;
 
@@ -48,7 +51,7 @@
   &:last-child {
     margin-bottom: 0;
   }
-  @media screen and (min-width: 480px) and (max-width: 1199px) {
+  @media screen and (min-width: 320px) and (max-width: 1199px) {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -70,7 +73,7 @@
 
 // Social-Container
 .social-container {
-  @media screen and (min-width: 480px) and (max-width: 767px) {
+  @media screen and (min-width: 320px) and (max-width: 767px) {
     margin-bottom: 60px;
   }
   @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -86,7 +89,7 @@
 
   color: #ffffff;
 
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 320px) {
     text-align: center;
   }
   @media screen and (min-width: 768px) {
@@ -96,35 +99,28 @@
   }
 }
 
-.social-list__item--spaceBetween:not(:last-child) {
-  margin-right: 10px;
-}
-
-.social-list__link--opacityBackground {
-  background-color: rgba(255, 255, 255, 0.1);
-}
-
 svg {
   .social-list__link--opacityBackground > & {
     fill: #ffffff;
   }
 }
 
+// svg {
+//   .social-container .social-list__link > & {
+//     fill: #ffffff;
+//   }
+// }
+
 // Mailing-Container
 
 .mailing-container {
-  @media screen and (min-width: 480px) {
-  }
-  @media screen and (min-width: 768px) {
-    display: block;
-  }
   @media screen and (min-width: 1200px) {
     display: flex;
   }
 }
 
 .mailing-form {
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 320px) {
   }
   @media screen and (min-width: 768px) {
   }
@@ -140,7 +136,7 @@ svg {
   font-weight: bold;
   color: #ffffff;
 
-  @media screen and (min-width: 480px) and (max-width: 1199px) {
+  @media screen and (min-width: 320px) and (max-width: 1199px) {
     text-align: center;
   }
 
@@ -149,7 +145,7 @@ svg {
 }
 
 .mailing-form__list {
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 320px) {
   }
   @media screen and (min-width: 768px) {
   }
@@ -174,7 +170,7 @@ svg {
   &:focus {
     border-color: $primery-accent-color;
   }
-  @media screen and (min-width: 480px) and (max-width: 1199px) {
+  @media screen and (min-width: 320px) and (max-width: 1199px) {
     margin-bottom: 20px;
 
     width: 100%;
@@ -207,7 +203,7 @@ svg {
   box-shadow: $box-shadow-button;
   border-radius: 4px;
   cursor: pointer;
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 320px) {
     margin-left: auto;
     margin-right: auto;
   }
