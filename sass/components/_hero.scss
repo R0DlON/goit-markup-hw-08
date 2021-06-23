@@ -16,23 +16,23 @@
 
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    background-image: url(../../Images/Hero-background_480x400.jpg);
+    background-image: url(/Images/Hero-background_480x400.jpg);
 
     @media screen and (min-device-pixel-ration: 2) and (min-resolution: 192dpi),
       and,
       (min-resolution: 2dppx) {
-      background-image: url(../../Images/Hero-background_480x400_2x.jpg);
+      background-image: url(/Images/Hero-background_480x400_2x.jpg);
     }
   }
 
   @media screen and(min-width: 768px) {
     background-size: 100% 100%;
-    background-image: url(../../Images/Hero-background_768x400.jpg);
+    background-image: url(/Images/Hero-background_768x400.jpg);
 
     @media screen and (min-device-pixel-ration: 2) and (min-resolution: 192dpi),
       and,
       (min-resolution: 2dppx) {
-      background-image: url(../../Images/Hero-background_768x400_2x.jpg);
+      background-image: url(/Images/Hero-background_768x400_2x.jpg);
     }
   }
   @media screen and(min-width: 1200px) {
@@ -41,14 +41,14 @@
     padding-bottom: 200px;
 
     background-size: 100% 600px;
-    background-image: url(../../Images/Hero-background_1600x600.jpg);
+    background-image: url(/Images/Hero-background_1600x600.jpg);
 
     @media screen and (min-device-pixel-ratio: 2),
       and,
       (min-resolution: 192dpi),
       and,
       (min-resolution: 2dppx) {
-      background-image: url(../../Images/Hero-background_1600x600_2x.jpg);
+      background-image: url(/Images/Hero-background_1600x600_2x.jpg);
     }
   }
 }
