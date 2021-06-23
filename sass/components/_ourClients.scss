@@ -28,6 +28,10 @@
       margin-right: 30px;
     }
   }
+  &:focus-within,
+  &:hover {
+    border-color: $primery-accent-color;
+  }
 }
 
 .сlients-list__link {
@@ -58,8 +62,8 @@ svg {
     fill: $primary-icon-color;
     transition: fill $patternTime $patternCubicBuzier;
   }
-  .сlients-list__link:hover &,
-  .сlients-list__link:focus & {
+  .сlients-list__item:hover &,
+  .сlients-list__item:focus & {
     fill: $primery-accent-color;
   }
 }

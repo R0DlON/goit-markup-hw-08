@@ -1334,6 +1334,10 @@ a {
   }
 }
 
+.сlients-list__item:focus-within, .сlients-list__item:hover {
+  border-color: #18a0fb;
+}
+
 .сlients-list__link {
   -webkit-transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1370,8 +1374,8 @@ a {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.сlients-list__link:hover svg,
-.сlients-list__link:focus svg {
+.сlients-list__item:hover svg,
+.сlients-list__item:focus svg {
   fill: #18a0fb;
 }
 
