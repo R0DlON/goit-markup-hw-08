@@ -58,17 +58,11 @@
     }
   }
 }
-.menu-mobile__icon--close {
-  transition: fill $patternTime $patternCubicBuzier;
-  .menu-mobile__button:focus &,
-  .menu-mobile__button:hover & {
-    fill: $primery-accent-color;
-  }
-}
 
 .menu-mobile__button {
   display: none;
 
+  transition: fill $patternTime $patternCubicBuzier;
   @media screen and (min-width: 768px) {
     display: none;
   }
@@ -84,5 +78,13 @@
     @media screen and (min-width: 768px) {
       display: none;
     }
+  }
+}
+
+.menu-mobile__icon--close {
+  transition: fill $patternTime $patternCubicBuzier;
+  .menu-mobile__button:focus &,
+  .menu-mobile__button:hover & {
+    fill: $primery-accent-color;
   }
 }
