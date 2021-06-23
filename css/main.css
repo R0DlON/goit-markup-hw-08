@@ -1375,7 +1375,8 @@ a {
   }
 }
 
-.сlients-list__link:hover, .сlients-list__link:focus {
+.сlients-list__item .сlients-list__link:hover,
+.сlients-list__item .сlients-list__link:focus {
   border-color: #18a0fb;
 }
 
@@ -1385,6 +1386,11 @@ a {
   fill: #afb1b8;
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.сlients-list__link:hover svg,
+.сlients-list__link:focus svg {
+  fill: #18a0fb;
 }
 
 .сlients-list__item:hover svg,

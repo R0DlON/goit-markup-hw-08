@@ -48,8 +48,8 @@
     margin: 15px auto;
   }
 
-  &:hover,
-  &:focus {
+  .сlients-list__item &:hover,
+  .сlients-list__item &:focus {
     border-color: $primery-accent-color;
   }
 }
@@ -61,6 +61,10 @@ svg {
 
     fill: $primary-icon-color;
     transition: fill $patternTime $patternCubicBuzier;
+  }
+  .сlients-list__link:hover &,
+  .сlients-list__link:focus & {
+    fill: $primery-accent-color;
   }
   .сlients-list__item:hover &,
   .сlients-list__item:focus & {
