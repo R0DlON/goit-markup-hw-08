@@ -49,8 +49,6 @@ body {
 }
 
 .container--flex-footer {
-  @media screen and (min-width: 320px) {
-  }
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     display: flex;
     flex-wrap: wrap;
@@ -65,8 +63,6 @@ body {
 .section {
   padding-top: $patternSectionPadding;
   padding-bottom: $patternSectionPadding;
-  margin-left: auto;
-  margin-right: auto;
 
   @media screen and (min-width: 480px) and (max-width: 1199px) {
     padding-top: 60px;
