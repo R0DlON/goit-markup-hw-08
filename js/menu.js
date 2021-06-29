@@ -1,14 +1,24 @@
 (() => {
-  const menuBtnRef = document.querySelector("[data-menu-button]");
-  const mobileMenuRef = document.querySelector("[data-menu]");
+  const refs = {
+    openModalBtn: document.querySelector('[menu-open]'),
+    closeModalBtn: document.querySelector('[menu-close]'),
+    modal: document.querySelector('[menu]'),
+  };
 
-  menuBtnRef.addEventListener("click", () => {
-    const expanded =
-      menuBtnRef.getAttribute("aria-expanded") === "true" || false;
+  refs.openModalBtn.addEventListener('click', toggleModal);
+  refs.closeModalBtn.addEventListener('click', toggleModal);
 
-    menuBtnRef.classList.toggle("button-menu__is-open");
-    menuBtnRef.setAttribute("aria-expanded", !expanded);
+  function toggleModal() {
+    refs.modal.classList.toggle('menu-mobile--is-open');
+  }
+})();
 
-    mobileMenuRef.classList.toggle("menu-mobile--is-open");
+(() => {
+  document.querySelector('.customer-form').addEventListener('submit', e => {
+    e.preventDefault();
+
+    new FormData(e.currentTarget).forEach((value, name) =>
+      console.log(`${name}: ${value}`),
+    );
   });
 })();
